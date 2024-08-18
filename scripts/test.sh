@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli chat /home/jindongming/project/modeling/MoeModeler/config/llama3_inference.yaml

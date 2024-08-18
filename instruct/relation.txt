@@ -1,0 +1,2 @@
+Given a sentence from a software requirements specification and entity list, extract all relations that matches the schema and return an empty list for non-existent relation types.
+Schema: ['Interface', 'Requirements Reference', 'Requirements Constraint']

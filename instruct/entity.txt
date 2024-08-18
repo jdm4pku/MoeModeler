@@ -1,0 +1,2 @@
+Given a sentence from a software requirements specification, please extract all entities that matches the schema and return an empty list for non-existent entity types. 
+Schema: ['Machine Domain', 'Physical Device', 'Environment Entity', 'Design Domain', 'Requirements', 'Shared Phenomena']

@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 llamafactory-cli export /home/jindongming/project/modeling/MoeModeler/config/llama3_merge.yaml
