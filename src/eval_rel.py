@@ -47,7 +47,7 @@ def compute_f1(predict_path):
     print(f"total_p:{total_p}, total_r:{total_r}, total_f1:{total_f1}")
 
 def main():
-    predict_path = "/home/jindongming/project/modeling/MoeModeler/predict/MixRA/fold_0/relation.json"
+    predict_path = "/home/jindongming/project/modeling/MoeModeler/predict/MixRE/qwen2/fold_0/relation.json"
     compute_f1(predict_path)
 
 if __name__=="__main__":

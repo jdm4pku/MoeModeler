@@ -1,6 +1,7 @@
 import os
 import json
 import ast
+from tqdm import tqdm
 
 def compute_f1(predict_path):
     result = {
@@ -13,12 +14,9 @@ def compute_f1(predict_path):
     }
     with open(predict_path,'r',encoding='utf-8') as file:
         predict_data = json.load(file)
-    for predict_item in predict_data:
+    for predict_item in tqdm(predict_data):
         predict = ast.literal_eval(predict_item["predict"])
         ground = ast.literal_eval(predict_item["ground"])
-        print("=============")
-        print(predict)
-        # ground_keys = ["Machine Domain","Physical Device","Environment Entity","Design Domain","Requirements","Shared Phenomena"]
         for i,key in enumerate(result.keys()):
             print(key)
             flat_predict = [item for item in predict[key]]
@@ -52,7 +50,7 @@ def compute_f1(predict_path):
     print(f"total_p:{total_p}, total_r:{total_r}, total_f1:{total_f1}")
 
 def main():
-    predict_path = "/home/jindongming/project/modeling/MoeModeler/predict/MixRA/fold_0/entity.json"
+    predict_path = "/home/jindongming/project/modeling/MoeModeler/predict/MixER/qwen2/fold_0/entity.json"
     compute_f1(predict_path)
 
 if __name__=="__main__":
