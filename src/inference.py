@@ -44,7 +44,7 @@ def get_predict(input_dir,output_dir):
 
 def main():
     input_dir = "/home/jindongming/project/modeling/MoeModeler/instruct-dataset/relation/10-fold/fold_0/test.json"
-    output_dir = "/home/jindongming/project/modeling/MoeModeler/predict/MixER/fold_0/relation.json"
+    output_dir = "/home/jindongming/project/modeling/MoeModeler/predict/MixER/glm4/fold_0/relation.json"
     get_predict(input_dir,output_dir)
 
 if __name__=="__main__":
